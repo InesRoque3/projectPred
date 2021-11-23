@@ -5,6 +5,5 @@ dash
 numpy
 pandas
 plotly
-ast
 statsmodels
 requests
