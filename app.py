@@ -17,7 +17,7 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets,
                 suppress_callback_exceptions=True)
-
+server = app.server
 def style_row_by_top_values(df, n_bins=9):
     import colorlover
     numeric_columns = df.select_dtypes('number').columns
